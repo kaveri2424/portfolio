@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA_Compatible" content="IE-edge" />
+  <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+        function download() {
+          // Replace 'cv.pdf' with the actual filename and extension of your CV file
+          var resumeUrl = 'more/resume.pdf';
+          
+          // Create a temporary link element
+          var link = document.createElement('a');
+          link.href = resumeUrl;
+          link.download = 'resume.pdf';
+          
+          // Append the link to the document body
+          document.body.appendChild(link);
+          
+          // Trigger the click event on the link
+          link.click();
+          
+          // Remove the link from the document body
+          document.body.removeChild(link);
+        }
+        function Hire() {
+            var recipient = 'kaverimudhiraj2424@gmail.com';
+            var subject = 'Hiring Inquiry';
+            var mailtoLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject);
+  
+  // Open the default email client
+            window.location.href = mailtoLink;
+}
+      </script>
+</head>
+<body>
+<header>
+    <nav>
+    <a href="#" class="logo">
+        <h2 ><span>R</span>ESUME</h2>
+    </a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project.html">Projects</a></li>
+    </ul>
+    <div class="social-icons">
+        <a href="mailto: kaverimudhiraj2424@gmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/kaveri-m-542044245/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/kaveri_mudhiraj/"><i class="fa-brands fa-instagram-square"></i></a>
+        
+    </div>
+    </nav>
+    <div class="content-wrapper">
+        <div class="content-left">
+            <p class="lead">Hello</p>
+            <div class="txt-content">
+                <div class="normal_text">I'm</div>
+                <div class="change_txt">Kaveri</div>
+            </div>
+            <p >
+                I am currently studying B.Tech in Computer Science and Engineering (CSE) at Mallareddy College of Engineering, and I am in my 3rd year. I consider myself a highly motivated and enthusiastic individual. I have a strong passion for learning and constantly strive to acquire new knowledge and skills.
+
+                With the skills and knowledge I have acquired, I am confident in my ability to excel in any task assigned to me. I approach every challenge with determination and dedication, always giving my best effort. If given the opportunity, I will bring my wholehearted commitment and passion to contribute to the success of the company.
+                
+                <p>Thank you for visiting my portfolio website.</p>
+            </p>
+            <button type="submit" onclick="Hire()">Hire me</button>
+            <button type="submit" onclick="download()">Download Resume</button>
+
+        </div>
+        <div class="content-right"><img src="img/kav.jfif" /></div>
+    </div>
+    <div class="skills">
+        <h2>Skills</h2>
+        <div><i class="fa-brands fa-html5 html"></i></div>
+        <div><i class="fa-brands fa-css3-alt css3"></i></div>
+        <div><i class="fa-brands fa-js js"></i></div>
+        <div><i class="fa-brands fa-python python"></i></div>
+        <div><i class="fa-brands fa-java java"></i></div>
+       
+    </div>
+</header>
+</body>
+</html>
